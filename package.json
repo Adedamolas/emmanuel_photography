@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "@remixicon/react": "^4.2.0",
+    "framer-motion": "^12.6.3",
     "lucide-react": "^0.378.0",
     "lucide-svelte": "^0.378.0",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-masonry-css": "^1.0.16",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "^20",
