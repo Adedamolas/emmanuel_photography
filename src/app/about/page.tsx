@@ -23,7 +23,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-semibold mb-4">My Story</h2>
           <p className="text-gray-700 mb-4">
             Hello, I&apos;m Emmanuel Adewuyi, a passionate photographer based in
-            Lagos. For over 5 years, I've been capturing moments that tell
+            Lagos. For over 5 years, I&apos;ve been capturing moments that tell
             stories through the lens of my camera.
           </p>
           <p className="text-gray-700 mb-4">
