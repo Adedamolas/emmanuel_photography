@@ -62,8 +62,8 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold mb-6">Equipment</h2>
         <p className="text-gray-700 mb-6">
           While a photographer&apos;s eye and creativity are paramount, quality
-          equipment helps bring my vision to life. Here's what I typically work
-          with:
+          equipment helps bring my vision to life. Here&apos;s what I typically
+          work with:
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
