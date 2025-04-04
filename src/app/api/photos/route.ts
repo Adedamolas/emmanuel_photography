@@ -1,7 +1,7 @@
 import cloudinary from "@/app/lib/cloudinary";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: NextRequest) {
+export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const category = searchParams.get("category");
   const limit = parseInt(searchParams.get("limit") || "12");
@@ -13,12 +13,12 @@ export async function GET(request: NextRequest) {
       .expression(`folder:${category}`)
       .sort_by("created_at", "desc")
       .max_results(limit);
-
+    
     // Only add next_cursor if provided
     if (cursor) {
       searchQuery = searchQuery.next_cursor(cursor);
     }
-
+    
     const result = await searchQuery.execute();
 
     return NextResponse.json({
