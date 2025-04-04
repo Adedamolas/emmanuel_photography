@@ -4,12 +4,10 @@ import RootLayout from "@/app/layout";
 import PhotoDetail from "@/app/components/gallery/PhoneDetail";
 
 interface PhotoPageProps {
-  params: {
-    id: string;
-  };
+  params: { id: string };
 }
-
 export default function PhotoPage({ params }: PhotoPageProps) {
+  const { id } = params;
   const photoId = parseInt(params.id);
   const photo = photos.find((p) => p.id === photoId);
 
