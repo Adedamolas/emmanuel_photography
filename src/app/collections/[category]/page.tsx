@@ -17,11 +17,11 @@ interface CategoryParams {
 }
 
 interface CategoryPageProps {
-  params: CategoryParams;
+  params: Promise<CategoryParams>;
 }
-
 export default function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = params;
+  const resolvedParams = use(params);
+  const { category } = resolvedParams;
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [hasMore, setHasMore] = useState<boolean>(true);
