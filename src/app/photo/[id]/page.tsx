@@ -24,7 +24,6 @@ export default function PhotoPage({ params }: PhotoPageProps) {
   );
 }
 
-// Generate static paths for all photos
 export async function generateStaticParams() {
   return photos.map((photo) => ({
     id: photo.id.toString(),

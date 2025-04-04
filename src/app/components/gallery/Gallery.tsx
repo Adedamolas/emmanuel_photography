@@ -35,8 +35,8 @@ const Gallery: React.FC<GalleryProps> = ({ photos }) => {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
-            <div className="p-2 bg-white bg-opacity-90">
-              <h3 className="text-lg font-medium">{photo.title}</h3>
+            <div className="p-2 bg-white bg-opacity-90 text-left">
+              <h3 className="text-2xl font-semibold">{photo.title}</h3>
               <p className="text-sm text-gray-600">{photo.category}</p>
               {photo.location && (
                 <p className="text-xs text-gray-500">{photo.location}</p>

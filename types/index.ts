@@ -1,12 +1,13 @@
 export interface Photo {
   id: number;
+  coverImage: string;
   title: string;
   category: string;
   src: string;
   description: string;
-  date?: string; // Optional date when photo was taken
-  location?: string; // Optional location information
-  tags?: string[]; // Optional array of tags
+  date?: string;
+  location?: string;
+  tags?: string[];
 }
 
 export interface GalleryProps {
