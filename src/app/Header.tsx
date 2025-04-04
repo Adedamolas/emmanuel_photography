@@ -34,7 +34,8 @@ export default function Header() {
 
             <div className="flex flex-col gap-4 mt-4">
               <p className="font-medium">
-                EVERY MOMENT IS A STORY, LET'S HELP MAKE YOURS UNFORGETTABLE
+                EVERY MOMENT IS A STORY, LET&apos;S HELP MAKE YOURS
+                UNFORGETTABLE
               </p>
               <Link href={"/contact"}>
                 <button className="p-6 bg-black text-white rounded-sm w-full md:w-3/4 border-2 hover:border-black hover:bg-transparent hover:text-black transition-colors">

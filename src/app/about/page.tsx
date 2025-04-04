@@ -22,19 +22,19 @@ export default function AboutPage() {
         <div>
           <h2 className="text-3xl font-semibold mb-4">My Story</h2>
           <p className="text-gray-700 mb-4">
-            Hello, I'm Emmanuel Adewuyi, a passionate photographer based in
+            Hello, I&apos;m Emmanuel Adewuyi, a passionate photographer based in
             Lagos. For over 5 years, I've been capturing moments that tell
             stories through the lens of my camera.
           </p>
           <p className="text-gray-700 mb-4">
             My journey into photography began when [short story about how you
-            started]. Since then, I've developed my style focusing on [your
+            started]. Since then, I&apos;ve developed my style focusing on [your
             photography style/specialty], seeking to [your mission/purpose].
           </p>
           <p className="text-gray-700">
-            When I'm not behind the camera, you'll find me reading and playing
-            the keyboard. I believe that these experiences enrich my perspective
-            and influence my photographic work.
+            When I&apos;m not behind the camera, you&apos;ll find me reading and
+            playing the keyboard. I believe that these experiences enrich my
+            perspective and influence my photographic work.
           </p>
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
       <div>
         <h2 className="text-3xl font-semibold mb-6">Equipment</h2>
         <p className="text-gray-700 mb-6">
-          While a photographer's eye and creativity are paramount, quality
+          While a photographer&apos;s eye and creativity are paramount, quality
           equipment helps bring my vision to life. Here's what I typically work
           with:
         </p>
