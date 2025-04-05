@@ -18,14 +18,14 @@ const collections: Collection[] = [
   { title: "FAMILY", slug: "family", coverImage: "DSC_0071j_geheha" },
   { title: "FINEART", slug: "fine-art", coverImage: "DSC_0793aa_cn0nxb" },
   { title: "GRADUATION", slug: "graduation", coverImage: "DSC_0040ay2_zo51ha" },
-  {
-    title: "HEAD-SHOTS",
-    slug: "head-shot",
-    coverImage: "DSC_0225.jpgd_acbeqi",
-  },
-  { title: "MATERNITY", slug: "maternity", coverImage: "DSC_1061bb_e6vbmf" },
-  { title: "OUTDOOR", slug: "outdoor", coverImage: "DSC_2460_1_hxsvck" },
-  { title: "WEDDINGS", slug: "weddings", coverImage: "DSC_1000a_xksvos" },
+  // {
+  //   title: "HEAD-SHOTS",
+  //   slug: "head-shot",
+  //   coverImage: "DSC_0225.jpgd_acbeqi",
+  // },
+  // { title: "MATERNITY", slug: "maternity", coverImage: "DSC_1061bb_e6vbmf" },
+  // { title: "OUTDOOR", slug: "outdoor", coverImage: "DSC_2460_1_hxsvck" },
+  // { title: "WEDDINGS", slug: "weddings", coverImage: "DSC_1000a_xksvos" },
 ];
 
 export default function CollectionsPage() {
@@ -65,6 +65,17 @@ export default function CollectionsPage() {
           </Link>
         ))}
       </div>
+      <Link
+        href={"/collection"}
+        className=" my-12 flex flex-row align-middle justify-center items-center"
+      >
+        <h1
+          className={`text-4xl font-semibold  border ${generalSansLight.className}`}
+        >
+          SEE MORE
+        </h1>
+        <ArrowRight className=" size-10" />
+      </Link>
     </div>
   );
 }

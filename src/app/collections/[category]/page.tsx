@@ -85,7 +85,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
     fetchPhotos();
     initialFetchDone.current = true;
-  }, [category, fetchPhotos]);
+  }, [category]);
 
   useEffect(() => {
     if (inView && initialFetchDone.current) {

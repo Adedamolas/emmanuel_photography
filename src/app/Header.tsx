@@ -9,7 +9,7 @@ export default function Header() {
       <div className="text-left mb-8 w-full md:w-1/2">
         <div className="mb-6">
           <h1 className="text-6xl md:text-[3rem] font-semibold -mt-2">
-            HI THERE,
+            HI THERE, I AM
           </h1>
           <div className="flex flex-col md:flex-row md:justify-between items-start">
             <h1 className="text-5xl md:text-[5rem] font-semibold">EMMANUEL</h1>
