@@ -2,7 +2,7 @@
 
 import CollectionsPage from "./collection/page";
 import Header from "./Header";
-import { TestimonialsSection } from "./testimonials/page";
+import TestimonialsPage from "./testimonials/page";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <CollectionsPage />
       </div>
       <div>
-        <TestimonialsSection />
+        <TestimonialsPage />
       </div>
     </main>
   );
