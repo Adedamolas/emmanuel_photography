@@ -14,12 +14,9 @@ interface CategoryParams {
   category: string;
 }
 
-interface CategoryPageProps {
-  params: CategoryParams; // Changed from Promise<CategoryParams>
-}
-
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = params; // Direct access without using 'use' hook
+// Fix: Use proper Next.js page props typing
+export default function CategoryPage({ params }: { params: CategoryParams }) {
+  const { category } = params;
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [hasMore, setHasMore] = useState<boolean>(true);
