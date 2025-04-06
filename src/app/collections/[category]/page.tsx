@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, use } from "react";
 import { CldImage } from "next-cloudinary";
 import { useInView } from "react-intersection-observer";
 
@@ -14,9 +14,16 @@ interface CategoryParams {
   category: string;
 }
 
-// Fix: Use proper Next.js page props typing
-export default function CategoryPage({ params }: { params: CategoryParams }) {
-  const { category } = params;
+// Using the Promise<any> type for params as required by the error message
+export default function CategoryPage({
+  params,
+}: {
+  params: Promise<CategoryParams>;
+}) {
+  // Use the 'use' hook to unwrap the Promise
+  const resolvedParams = use(params);
+  const { category } = resolvedParams;
+
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [hasMore, setHasMore] = useState<boolean>(true);
