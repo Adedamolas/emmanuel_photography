@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Send, Phone, Mail, MapPin } from "lucide-react";
+import { Send, Phone, Mail, MapPin, Info } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -224,7 +224,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* <div>
+          <div>
             <h2 className="text-2xl font-semibold mb-6">Business Hours</h2>
             <div className="bg-gray-50 rounded-lg p-6">
               <div className="space-y-3">
@@ -245,7 +245,7 @@ export default function ContactPage() {
                 <Info /> Hours may vary for scheduled photo shoots and events
               </p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
