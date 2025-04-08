@@ -27,14 +27,24 @@ export default function AboutPage() {
             stories through the lens of my camera.
           </p>
           <p className="text-gray-700 mb-4">
-            My journey into photography began when [short story about how you
-            started]. Since then, I&apos;ve developed my style focusing on [your
-            photography style/specialty], seeking to [your mission/purpose].
+            My journey into photography began after my secondary school
+            education, and I was really committed to mastering the craft. Since
+            then, the journey continued , from exploring street photography to
+            documentary, to shooting portraits, to documenting events. what
+            started as a skill has grown to become a business, not just that but
+            a great tool which has made me connect more with people and also put
+            smile on many faces through the images I create for them.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Over the years my unique style of photography as set me apart and as
+            made my work stand out. I&apos;m a big fan of the renaissance, and I
+            ensure that every image I create is timeless and it&apos;s one that
+            last.
           </p>
           <p className="text-gray-700">
-            When I&apos;m not behind the camera, you&apos;ll find me reading and
-            playing the keyboard. I believe that these experiences enrich my
-            perspective and influence my photographic work.
+            Asides photography, I&apos;m a graduate of Biochemistry interested
+            in data science and AI. I&apos;m also a lover of classical church
+            music. I read music sheet, play the piano and also the trumpet.
           </p>
         </div>
       </div>
@@ -42,9 +52,13 @@ export default function AboutPage() {
       <div className="mb-16">
         <h2 className="text-3xl font-semibold mb-6">My Approach</h2>
         <p className="text-gray-700 mb-6 max-w-3xl">
-          I believe that photography is about [your philosophy about
-          photography]. Each session is an opportunity to [what you aim to
-          achieve in your work].
+          My Approach to photography is a very unique one, I do not believe
+          photography is just about clicking the shutter of the camera, or the
+          light set up, or twerking few slides in Photoshop. Although it&apos;s
+          part of the craft Beyond the technical part, I find my craft as a
+          means of bringing out the beauty, the confidence and worth in people.
+          Each session is an opportunity to create a masterpiece that
+          communicates and speak volume.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -58,7 +72,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h2 className="text-3xl font-semibold mb-6">Equipment</h2>
         <p className="text-gray-700 mb-6">
           While a photographer&apos;s eye and creativity are paramount, quality
@@ -86,7 +100,7 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

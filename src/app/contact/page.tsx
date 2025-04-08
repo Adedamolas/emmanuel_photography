@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Send, Phone, Mail, MapPin, Info } from "lucide-react";
+import { Send, Phone, Mail, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -194,7 +194,7 @@ export default function ContactPage() {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Email</h3>
                   <p className="mt-1 text-gray-600">
-                    contact@yourphotography.com
+                    emmanueladewuyiphotography@gmail.com
                   </p>
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function ContactPage() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Phone</h3>
-                  <p className="mt-1 text-gray-600">(123) 456-7890</p>
+                  <p className="mt-1 text-gray-600">(234) 812 166 0177</p>
                 </div>
               </div>
 
@@ -215,9 +215,7 @@ export default function ContactPage() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Location</h3>
-                  <p className="mt-1 text-gray-600">
-                    San Francisco, California
-                  </p>
+                  <p className="mt-1 text-gray-600">Lagos, Nigeria.</p>
                   <p className="text-gray-600">
                     Available for travel worldwide
                   </p>
@@ -226,7 +224,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h2 className="text-2xl font-semibold mb-6">Business Hours</h2>
             <div className="bg-gray-50 rounded-lg p-6">
               <div className="space-y-3">
@@ -247,7 +245,7 @@ export default function ContactPage() {
                 <Info /> Hours may vary for scheduled photo shoots and events
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

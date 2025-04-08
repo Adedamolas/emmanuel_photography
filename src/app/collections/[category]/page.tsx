@@ -27,6 +27,7 @@ export default function CategoryPage({
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [hasMore, setHasMore] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
   const [nextCursor, setNextCursor] = useState<string | null>(null);
   const initialFetchDone = useRef<boolean>(false);
   const photoIdsSet = useRef<Set<string>>(new Set());
@@ -71,6 +72,7 @@ export default function CategoryPage({
       }
     } catch (error) {
       console.error("Error fetching photos:", error);
+      setError("Failed to load photos. Please try again later.");
       setHasMore(false); // Prevent infinite retries on error
     } finally {
       setIsLoading(false);
@@ -127,6 +129,11 @@ export default function CategoryPage({
       {isLoading && (
         <div className="flex justify-center mt-10">
           <div className="w-12 h-12 rounded-full border-4 border-t-black border-r-gray-200 border-b-gray-200 border-l-gray-200 animate-spin"></div>
+        </div>
+      )}
+      {error && (
+        <div className="text-center mt-10 p-4 bg-red-50 text-red-700 rounded">
+          {error}
         </div>
       )}
       {hasMore && !isLoading && <div ref={ref} className="h-20"></div>}

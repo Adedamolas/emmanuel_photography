@@ -10,7 +10,7 @@ export const approach: Approach[] = [
   {
     title: "Vision",
     description:
-      "I focus on capturing authentic moments that tell unique stories and evoke genuine emotions.",
+      "I  believe images can wield great power and communicate emotions. My vision is to capture images that last a lifetime.",
     icon: Eye,
   },
   {
