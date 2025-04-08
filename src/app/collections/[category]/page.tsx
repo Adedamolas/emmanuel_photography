@@ -127,7 +127,7 @@ export default function CategoryPage({
         ))}
       </div>
       {isLoading && (
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-10 h-screen">
           <div className="w-12 h-12 rounded-full border-4 border-t-black border-r-gray-200 border-b-gray-200 border-l-gray-200 animate-spin"></div>
         </div>
       )}
