@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import localFont from "next/font/local";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
+import { Analytics } from "@vercel/analytics/next";
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -34,7 +35,11 @@ export default function RootLayout({
       <body className={generalSans.className}>
         {loading && <Preloader />}
         {!loading && <Navbar />}
-        <main className=" mt-16">{children}</main>
+        <main className=" mt-16">
+          {children}
+
+          <Analytics />
+        </main>
         {!loading && <Footer />}
       </body>
     </html>
